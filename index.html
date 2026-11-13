@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关系 &amp; 卡农 · 现代舞作品</title>
+<meta name="description" content="两部现代舞作品《关系》《卡农》的现场录像与作品简析。">
+<meta property="og:title" content="关系 &amp; 卡农 · 现代舞作品">
+<meta property="og:description" content="两部现代舞作品的现场录像与作品简析。">
+<meta property="og:image" content="assets/canon-poster.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+<style>
+  :root{
+    --bg:#0a0a0b;
+    --panel:#101012;
+    --text:#e9e7e3;
+    --muted:#8d8983;
+    --line:#242427;
+    --accent:#d9b169;
+    --max:1120px;
+    --serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+    --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--text);
+    font-family:var(--sans);font-size:16px;line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img,video{display:block;max-width:100%}
+  .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+  .serif{font-family:var(--serif)}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;padding:clamp(90px,15vh,150px) 0 clamp(48px,7vh,72px);overflow:hidden}
+  .hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      radial-gradient(60% 50% at 20% 0%,rgba(217,177,105,.10),transparent 70%),
+      radial-gradient(50% 45% at 90% 20%,rgba(120,150,200,.07),transparent 70%);
+  }
+  .hero .wrap{position:relative}
+  .kicker{
+    margin:0 0 22px;font-size:12px;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--accent);
+  }
+  .hero h1{
+    margin:0;font-family:var(--serif);font-weight:500;
+    font-size:clamp(44px,9vw,96px);line-height:1.08;letter-spacing:.02em;
+  }
+  .hero h1 .amp{color:var(--accent);font-size:.62em;vertical-align:.06em;padding:0 .06em}
+  .lede{
+    margin:26px 0 0;max-width:44em;color:#b9b4ac;font-size:clamp(15px,2.2vw,17px);
+  }
+  .meta-row{
+    display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;
+    font-size:13px;letter-spacing:.04em;color:var(--muted);
+  }
+  .meta-row span{position:relative;padding-left:16px}
+  .meta-row span::before{content:"";position:absolute;left:0;top:.75em;width:5px;height:1px;background:var(--accent)}
+  .repo-link{
+    display:inline-flex;align-items:center;gap:8px;margin-top:36px;
+    border:1px solid var(--line);border-radius:999px;padding:9px 18px;
+    font-size:13px;color:#cfcac2;transition:.25s;
+  }
+  .repo-link:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* ---------- nav ---------- */
+  nav{
+    position:sticky;top:0;z-index:20;background:rgba(10,10,11,.82);
+    backdrop-filter:blur(14px);border-bottom:1px solid var(--line);
+  }
+  nav .wrap{display:flex;align-items:center;gap:6px;height:52px;overflow-x:auto;scrollbar-width:none}
+  nav .wrap::-webkit-scrollbar{display:none}
+  nav a{
+    padding:7px 14px;border-radius:999px;font-size:13.5px;color:var(--muted);
+    white-space:nowrap;transition:.2s;border:1px solid transparent;
+  }
+  nav a:hover{color:var(--text)}
+  nav a.on{color:var(--text);border-color:var(--line);background:#141416}
+
+  /* ---------- section ---------- */
+  section.work{padding:clamp(56px,9vh,96px) 0}
+  section.work,#about{scroll-margin-top:64px}
+  section.work + section.work{border-top:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+  .num{font-family:var(--serif);font-size:13px;letter-spacing:.2em;color:var(--accent)}
+  h2{
+    margin:0;font-family:var(--serif);font-weight:500;
+    font-size:clamp(30px,5vw,44px);line-height:1.25;letter-spacing:.03em;
+  }
+  .sub{margin:6px 0 0;color:var(--muted);font-size:14px;letter-spacing:.03em}
+
+  /* ---------- player ---------- */
+  .player{margin:30px 0 44px;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .player video{width:100%;aspect-ratio:960/544;background:#000;display:block}
+  .pbar{
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+    padding:11px 16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);
+  }
+  .pbar .name{letter-spacing:.03em}
+  .qgroup{display:flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:999px;padding:3px}
+  .qgroup button{
+    appearance:none;border:0;background:transparent;color:var(--muted);
+    font-family:inherit;font-size:12px;padding:4px 11px;border-radius:999px;cursor:pointer;transition:.2s;
+  }
+  .qgroup button:hover{color:var(--text)}
+  .qgroup button.on{background:#26262a;color:var(--text)}
+  .qgroup .lbl{font-size:11.5px;letter-spacing:.1em;padding-left:8px;color:#6d6a65}
+
+  /* ---------- body ---------- */
+  .body{display:grid;grid-template-columns:minmax(0,1fr) 246px;gap:clamp(28px,5vw,64px);align-items:start}
+  .prose p{margin:0 0 1.35em;color:#cdc8c0;font-size:clamp(15px,2.05vw,16.5px);line-height:2.05;text-align:justify}
+  .prose p:last-child{margin-bottom:0}
+  .prose strong{color:var(--text);font-weight:600}
+
+  aside{position:sticky;top:76px;display:grid;gap:26px}
+  aside h3{
+    margin:0 0 10px;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;
+    color:#6f6b66;font-weight:600;
+  }
+  .tags{display:flex;flex-wrap:wrap;gap:7px}
+  .tags span{
+    border:1px solid var(--line);border-radius:6px;padding:3px 10px;
+    font-size:12.5px;color:#b6b1a9;
+  }
+  .steps{list-style:none;margin:0;padding:0;display:grid;gap:9px;counter-reset:s}
+  .steps li{
+    position:relative;padding-left:26px;font-size:13px;color:#a8a39b;line-height:1.6;
+    counter-increment:s;
+  }
+  .steps li::before{
+    content:counter(s,decimal-leading-zero);position:absolute;left:0;top:0;
+    font-family:var(--serif);font-size:11px;color:var(--accent);opacity:.85;
+  }
+
+  /* ---------- about ---------- */
+  #about{border-top:1px solid var(--line);padding:clamp(48px,8vh,80px) 0}
+  #about p{color:#a9a49c;max-width:62ch;font-size:14.5px;line-height:2}
+  #about code{background:#17171a;border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-size:12.5px}
+
+  footer{border-top:1px solid var(--line);padding:30px 0 56px;color:#6d6a65;font-size:12.5px}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{border-bottom:1px solid #33333a;padding-bottom:1px}
+  footer a:hover{color:var(--accent);border-color:var(--accent)}
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:860px){
+    .body{grid-template-columns:1fr}
+    aside{position:static;grid-template-columns:1fr 1fr;gap:20px}
+    .prose p{text-align:left}
+    .pbar{flex-wrap:wrap;gap:8px}
+  }
+  @media (max-width:520px){
+    aside{grid-template-columns:1fr}
+    .hero h1{letter-spacing:0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none;transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">Modern Dance · 现场录像</p>
+    <h1 class="serif">关系 <span class="amp">&amp;</span> 卡农</h1>
+    <p class="lede">两部现代舞作品的现场录像，附作品简析。<br>一部讲人如何被关系困住，一部讲人如何从压抑中挣脱。</p>
+    <div class="meta-row">
+      <span>02:46 / 05:52</span>
+      <span>四人舞 · 群舞</span>
+      <span>固定机位现场录制</span>
+      <span>H.264 在线播放</span>
+    </div>
+    <a class="repo-link" href="https://github.com/duyuanfu/dance-show">GitHub 仓库 <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#guanxi" class="on">《关系》</a>
+    <a href="#canon">《卡农》</a>
+    <a href="#about">关于本站</a>
+  </div>
+</nav>
+
+<main>
+  <section class="work" id="guanxi">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="num">01</span>
+        <h2 class="serif">《关系》</h2>
+      </div>
+      <p class="sub">02:46 ｜ 四位舞者 ｜ 对抗 · 试探 · 僵持</p>
+
+      <figure class="player">
+        <video controls playsinline preload="none" poster="assets/guanxi-poster.jpg"
+               data-hd="videos/hd/guanxi-hd.mp4" data-sd="videos/guanxi.mp4">
+          <source src="videos/hd/guanxi-hd.mp4" type="video/mp4">
+          你的浏览器不支持内嵌视频，<a href="videos/hd/guanxi-hd.mp4">点此下载观看</a>。
+        </video>
+        <figcaption class="pbar">
+          <span class="name">《关系》完整版 · 02:46</span>
+          <span class="qgroup" role="group" aria-label="画质切换">
+            <span class="lbl">画质</span>
+            <button type="button" data-q="sd">流畅</button>
+            <button type="button" data-q="hd" class="on">高清</button>
+          </span>
+        </figcaption>
+      </figure>
+
+      <div class="body reveal">
+        <div class="prose">
+          <p>这部现代舞作品以四个人之间的对抗关系为核心，表现人在复杂关系中的防备、算计与相互消耗。四个人曾经同属一个群体，但信任早已破裂。他们表面上维持默契，实际上每个人都在观察别人、隐藏自己，并寻找击破对方的机会。</p>
+          <p>作品开场时，四个人互相对视。这种对视并不是亲近，而是一种审视、试探和压迫。每个人都从别人的目光里读出危险，却又不愿先暴露自己的真实想法。对视让舞台一开始就充满紧张感，仿佛一场无声的博弈已经开始。</p>
+          <p>随后，他们的身体逐渐呈现出收缩、低重心、停顿等状态，表现出戒备与压抑。随着关系推进，四个人开始两两试探：有人试图控制，有人伪装顺从，有人敏感多疑，有人沉默等待。中段曾出现短暂的群体同步，看似形成合作，实则只是每个人都在利用集体保护自己。随后平衡破裂，对抗逐渐爆发，动作变得尖锐、推拉、失衡。</p>
+          <p>结尾处，四个人同时逼近中心，却又在同一瞬间停下。没有人真正胜利，也没有人完全失败。他们彼此牵制，彼此消耗，最终被困在同一种关系里。</p>
+          <p>整部作品的情感从对视中的试探开始，经历压抑、伪装、对抗，最后落在无法解脱的僵持感。它想表达的不是谁打败谁，而是人在对抗中如何被关系困住：每个人都想控制别人，却最终都无法真正逃离彼此。</p>
+        </div>
+        <aside>
+          <div>
+            <h3>关键词</h3>
+            <div class="tags"><span>防备</span><span>算计</span><span>消耗</span><span>僵持</span></div>
+          </div>
+          <div>
+            <h3>情绪走向</h3>
+            <ol class="steps">
+              <li>对视中的审视与试探</li>
+              <li>收缩、低重心的戒备</li>
+              <li>两两试探与伪装</li>
+              <li>群体同步的假象</li>
+              <li>平衡破裂、对抗爆发</li>
+              <li>同时逼近又同时停下</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="canon">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="num">02</span>
+        <h2 class="serif">《卡农》</h2>
+      </div>
+      <p class="sub">05:52 ｜ 群舞 ｜ 压抑 · 累积 · 突破 · 释放</p>
+
+      <figure class="player">
+        <video controls playsinline preload="none" poster="assets/canon-poster.jpg"
+               data-hd="videos/hd/canon-hd.mp4" data-sd="videos/canon.mp4">
+          <source src="videos/hd/canon-hd.mp4" type="video/mp4">
+          你的浏览器不支持内嵌视频，<a href="videos/hd/canon-hd.mp4">点此下载观看</a>。
+        </video>
+        <figcaption class="pbar">
+          <span class="name">《卡农》完整版 · 05:52</span>
+          <span class="qgroup" role="group" aria-label="画质切换">
+            <span class="lbl">画质</span>
+            <button type="button" data-q="sd">流畅</button>
+            <button type="button" data-q="hd" class="on">高清</button>
+          </span>
+        </figcaption>
+      </figure>
+
+      <div class="body reveal">
+        <div class="prose">
+          <p>这部现代舞作品整体呈现出一种由压抑到冲破、由束缚到释放的情感轨迹。作品前半部分以压抑、沉闷、克制的情绪为主，舞者的身体状态多表现为收缩、蜷曲、低重心的移动，动作带有明显的阻滞感和无力感，仿佛被某种无形的压力包围。情绪并不是直接爆发，而是在反复的重复、延迟和累积中逐渐加重，形成一种「被困住」的心理氛围。</p>
+          <p>随着作品推进，压抑感开始松动。舞者之间出现更多错落的呼应，动作由被动承受转向主动伸展，身体线条逐渐打开，空间使用也从封闭转向扩张。到作品后半段，情绪达到转折：原本被压制的力量被释放出来，动作变得果断、延展、具有冲破感，仿佛个体终于从长期束缚中挣脱出来，完成了一次由内而外的自我突破。整部作品的情感因此呈现出「压抑—累积—挣扎—突破—释放」的清晰层次。</p>
+          <p>在技法上，作品运用了卡农结构来强化这种情绪变化。<strong>卡农依次</strong>使动作像波浪一样依次传递，形成连绵不断的压迫感，也暗示个体情绪在群体中的扩散；<strong>卡农间</strong>通过时间上的错位，让相同或相似动作在不同舞者身上先后出现，营造出被困在循环中的感受；<strong>卡农复数</strong>则以多个动作线索并行展开，使舞台情绪更加复杂，仿佛多种压力同时作用在个体身上；<strong>卡农变数</strong>在重复中加入力度、方向、节奏或身体形态的变化，让原本一致的压抑动作逐渐产生裂痕，为突破埋下伏笔；<strong>卡农个体</strong>突出单个舞者的挣扎与觉醒，使观众能清晰感受到「我」从群体束缚中分离出来的瞬间；而<strong>卡农群体</strong>则在结尾处将个体突破扩展为集体释放，形成更强的情感共振。</p>
+          <p>通过卡农技法的层层推进，作品把「压抑」处理成一种可以被看见、被传递、被积累的身体经验；而最后的突破也因此不只是情绪宣泄，而是经过长期累积后形成的必然释放。</p>
+        </div>
+        <aside>
+          <div>
+            <h3>关键词</h3>
+            <div class="tags"><span>压抑</span><span>累积</span><span>挣扎</span><span>突破</span><span>释放</span></div>
+          </div>
+          <div>
+            <h3>卡农手法</h3>
+            <div class="tags"><span>依次</span><span>间</span><span>复数</span><span>变数</span><span>个体</span><span>群体</span></div>
+          </div>
+          <div>
+            <h3>情绪走向</h3>
+            <ol class="steps">
+              <li>收缩、蜷曲的压抑</li>
+              <li>重复与延迟中的累积</li>
+              <li>错落呼应的松动</li>
+              <li>动作打开、空间扩张</li>
+              <li>果断延展的突破</li>
+              <li>集体释放</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="serif">关于本站</h2></div>
+      <p>两部作品均为固定机位的现场录制。「高清」为 H.264 高码率版本，「流畅」为适配弱网的压缩版本，切换画质时会保留当前播放进度。视频与文字同样收录在 <a href="https://github.com/duyuanfu/dance-show" style="border-bottom:1px solid #33333a">GitHub 仓库</a> 中，可自由下载。</p>
+      <p style="margin-top:-.4em">本站仅用于作品展示，视频版权归创作者所有，未经许可请勿转载或商用。</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>现代舞作品 · 《关系》《卡农》</span>
+    <span><a href="https://github.com/duyuanfu/dance-show">github.com/duyuanfu/dance-show</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* 画质切换：保留播放进度与播放状态 */
+  document.querySelectorAll('.player').forEach(function(fig){
+    var v = fig.querySelector('video');
+    var btns = fig.querySelectorAll('[data-q]');
+    btns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        if (btn.classList.contains('on')) return;
+        var t = v.currentTime, playing = !v.paused;
+        btns.forEach(function(b){ b.classList.toggle('on', b === btn); });
+        v.src = btn.dataset.q === 'hd' ? v.dataset.hd : v.dataset.sd;
+        v.load();
+        v.addEventListener('loadedmetadata', function(){
+          if (t > 0 && t < v.duration) v.currentTime = t;
+          if (playing) v.play().catch(function(){});
+        }, {once:true});
+      });
+    });
+  });
+
+  /* 滚动高亮 */
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  if ('IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        var i = targets.indexOf(e.target);
+        if (i < 0) return;
+        links.forEach(function(a, j){ a.classList.toggle('on', j === i); });
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    targets.forEach(function(t){ if (t) spy.observe(t); });
+
+    var rev = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); rev.unobserve(e.target); }
+      });
+    }, {threshold:.08});
+    document.querySelectorAll('.reveal').forEach(function(el){ rev.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>
