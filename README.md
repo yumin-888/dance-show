@@ -7,7 +7,7 @@
 | [《关系》](#关系) | 02:46 | 四人舞 | 防备 · 算计 · 相互消耗 |
 | [《卡农》](#卡农) | 05:52 | 群舞 | 压抑 · 累积 · 挣扎 · 突破 |
 
-视频为固定机位的现场录制。每部作品下方提供**在线观看**（网页内直接播放）和**高清原片下载**两种方式。
+视频为固定机位的现场录制。**在线观看**会在浏览器里直接播放（支持全屏），**高清原片下载**适合本地存档。
 
 ---
 
@@ -15,7 +15,7 @@
 
 ![《关系》片段预览](assets/guanxi-preview.gif)
 
-▶ **[在线观看](videos/guanxi.mp4)**　·　[高清原片下载](videos/hd/guanxi-hd.mp4?raw=true)（13 MB）
+▶ **[在线观看](https://cdn.jsdelivr.net/gh/duyuanfu/dance-show@main/videos/guanxi.mp4)**　·　[高清原片下载](videos/hd/guanxi-hd.mp4?raw=true)（13 MB）
 
 `02:46` ｜ 四位舞者 ｜ 现代舞
 
@@ -37,7 +37,7 @@
 
 ![《卡农》片段预览](assets/canon-preview.gif)
 
-▶ **[在线观看](videos/canon.mp4)**　·　[高清原片下载](videos/hd/canon-hd.mp4?raw=true)（33 MB）
+▶ **[在线观看](https://cdn.jsdelivr.net/gh/duyuanfu/dance-show@main/videos/canon.mp4)**　·　[高清原片下载](videos/hd/canon-hd.mp4?raw=true)（33 MB）
 
 `05:52` ｜ 群舞 ｜ 现代舞
 
@@ -56,11 +56,11 @@
 ## 文件说明
 
 ```
-videos/      在线观看版（H.264，小于 10 MB，GitHub 网页直接播放）
-videos/hd/   高清原片（供下载，体积较大，网页不预览）
+videos/      在线观看版（H.264，约 9 MB，浏览器可直接播放）
+videos/hd/   高清原片（供下载，体积较大）
 assets/      片段预览动图
 ```
 
-> GitHub 文件页对超过约 10 MB 的文件只显示「View raw」、不渲染播放器，因此在线观看版专门压到 10 MB 以内；需要更高画质请下载高清原片。
+> **关于播放**：GitHub 的文件页面不会加载视频播放器（超过几 MB 就只显示「View raw」），所以「在线观看」链接指向 jsDelivr CDN，它返回正确的 `video/mp4` 类型，点开即在浏览器内播放、可全屏。若链接失效，也可直接下载高清原片观看。
 
 本仓库仅用于作品展示，视频版权归创作者所有，未经许可请勿转载或商用。
